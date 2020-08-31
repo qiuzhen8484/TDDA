@@ -38,7 +38,7 @@ DR ("all_data_DR" sub-directory) serves as the source domain and AMD ("all_data_
   ```
         with open('./data/DR_task.pkl', 'rb') as f:
             train_dict = pickle.load(f)
-        train_list = train_dict['train_list'] # train sub-directory
+        train_list = train_dict['train_list'] # all_data_DR directory
   ```
   - for the target domain (AMD):
   ```
@@ -55,6 +55,6 @@ DR ("all_data_DR" sub-directory) serves as the source domain and AMD ("all_data_
   ```
         # e.g., for the source domain (DR)
         for img_tup in train_list:
-            img = PIL.Image.open(os.path.join('all_data/all_data_DR', img_tup[0])
+            img = PIL.Image.open(os.path.join('all_data_fundus/all_data_DR', img_tup[0])
             label = img_tup[1]
   ```
