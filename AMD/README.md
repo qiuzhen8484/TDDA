@@ -8,9 +8,9 @@ The descriptions for the **AMD** dataset are presented below. We first provide a
 ## Data Composition
 To make up this dataset, we collected and integrated the following open-source datasets:
 
-- The STARE dataset:http://cecas.clemson.edu/~ahoover/stare/
-- The ADAM dataset:https://ai.baidu.com/broad/introduction?dataset=amd
-- The dataset of Diabetic Retinopathy Detection Competition on Kaggle:https://www.kaggle.com/tanlikesmath/diabetic-retinopathy-resized
+- The STARE dataset: http://cecas.clemson.edu/~ahoover/stare/
+- The ADAM dataset: https://ai.baidu.com/broad/introduction?dataset=amd
+- The dataset of Diabetic Retinopathy Detection Competition on Kaggle: https://www.kaggle.com/tanlikesmath/diabetic-retinopathy-resized
 
 Specifically, we choose part of control cases (non-DR and non-AMD) and diabetic retinopathy cases to make up source diabetic retinopathy (DR) domain, while part of control cases and all age-related macular degeneration cases compose the target age-related macular degeneration (AMD) domain.
 
