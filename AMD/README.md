@@ -1,10 +1,9 @@
 # <center>Task-Heterogeneous Domain Adaptation for Medical Image Diagnosis</center>
-We provide the **AMD** dataset for domain adaptation from diabetic retinopathy (DR) to age-related macular degeneration (AMD). The paper is available [here](https://arxiv.org/pdf/2005.01577.pdf).
-
+We provide the **AMD** dataset for domain adaptation from diabetic retinopathy (DR) to age-related macular degeneration (AMD).
 # Dataset
-The descriptions for the **AMD** dataset are presented below. We first provide a link to download the dataset. Next, the data statistics and usage of the dataset will be introduced.
+The descriptions for the **AMD** dataset are presented below. We first provide a link to download the dataset. Next, details about the dataset and usage of the dataset will be introduced.
 ## Download
-- The dataset in this paper is available [here](https://pan.baidu.com/s/1bT6dtNkrulcpztEAkQFv6g).
+- The dataset is available [here](https://pan.baidu.com/s/1bT6dtNkrulcpztEAkQFv6g).
 
 ## Data Composition
 To make up this dataset, we collected and integrated the following open-source datasets:
@@ -31,9 +30,7 @@ all_data_fundus
 
 - Statistics of the dataset are shown as follow:\
 ![data statistic](data.png "statistics of the dataset")\
-Pneumonia ("all_data_DR" sub-directory) serves as the source domain and COVID-19 ("all_data_MD" sub-directory) serves as the target domain.
-
-- You can refer to the [paper](https://arxiv.org/pdf/2005.01577.pdf) for more details about the dataset.
+DR ("all_data_DR" sub-directory) serves as the source domain and AMD ("all_data_MD" sub-directory) serves as the target domain.
 
 ## Usage
 - In the directory `./data`, there are two `.pkl` files which record the image lists and its corresponding labels. Specifically, an image and its label is stored in a tuple (image_name, label). "1" denotes class "diabetic retinopathy" (DR) and class "age-related macular degeneration" (AMD) in source and target domain, respectively, while "0" denotes class "control" (non-DR and non-AMD). You can read the data list following the below manner:
@@ -61,14 +58,3 @@ Pneumonia ("all_data_DR" sub-directory) serves as the source domain and COVID-19
             img = PIL.Image.open(os.path.join('all_data/all_data_DR', img_tup[0])
             label = img_tup[1]
   ```
-
-# Citation
-If you find the **AMD** dataset useful, please cite the following paper:
-```
-@article{zhang2020covidda,
-    title={COVID-DA: Deep Domain Adaptation from Typical Pneumonia to COVID-19},
-    author={Yifan Zhang and Shuaicheng Niu and Zhen Qiu and Ying Wei and Peilin Zhao and Jianhua Yao and Junzhou Huang and Qingyao Wu and Mingkui Tan},
-    journal={arXiv},
-    year={2020},
-}
-```
